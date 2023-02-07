@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(217, 54%, 11%);
+  min-height: 1000px;
+  display: flex;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  justify-content: center;
+  align-items: center;
+  min-height: 130vh;
+}
+
+.container {
+  max-width: 350px;
+  margin: 0 auto;
+  max-width: 350px;
+  padding: 18px;
+  border-radius: 20px;
+  background: hsl(216, 50%, 16%);
+}
+
+.view{
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.view img {
+  width: 100%;
+  display: block;
+}
+
+.img-view{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  display: none;
+}
+
+.img-view img {
+  position: absolute;
+  width: 50px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.view:hover .img-view {
+display: block;
+cursor: pointer;
+}
+
+.text {
+  list-style: none;
+  margin: 0px;
+  margin-top: 20px;
+  color: hsl(215, 51%, 70%);
+}
+
+.text a {
+  line-height: 50px;
+ color: white;
+ text-decoration: none;
+}
+
+.text-a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+ justify-content: space-between;
+  padding: 25px 0; 
+}
+
+.eth, .days  {
+  display: flex;
+  align-items: center;
+}
+
+.eth p {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  padding-left: 7px;
+  font-size: 18px;
+}
+
+.days p {
+  padding-left: 7px;
+  font-size: 18px;
+}
+
+hr {
+  border-color:  hsla(215, 52%, 70%, 0.527);
+}
+
+.author {
+display: flex;
+align-items: center;
+padding-top: 10px;
+}
+
+.author img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-right: 15px;
+}
+
+.author a {
+  color: white;
+  font-size: 18px;
+}
+
+.author a:hover{
+  color: hsl(178, 100%, 50%);
+}
